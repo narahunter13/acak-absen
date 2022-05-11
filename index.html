@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Pengacak Absen</title>
+</head>
+
+<body class="p-1">
+    <h1 class="display-1 text-center fw-bold">Random Absen</h1>
+    <p class="lead text-center">
+        Made with &#9829;  by M. Rifky Naratama Susanto
+      </p>
+    <div class="container d-flex flex-column align-items-center my-4">
+        <select onchange="resetAbsen()" id="kelas" class="form-select my-4 w-50" aria-label="Default select example">
+            <option selected>Pilih Kelas...</option>
+            <option value="1">1KS3</option>
+            <option value="2">1KS4</option>
+        </select>
+        <button type="button" onclick="acakAbsen()" class="btn btn-primary mx-auto">Acak!</button>
+    </div>
+    <div class="container">
+        <h2 class="fs-4 text-center">No. Absen</h2>
+        <h3 class="display-4 text-center" id="no-absen">-</h3>
+        <h2 class="fs-4 text-center mt-4">Nama Lengkap</h2>
+        <h3 class="display-4 text-center" id="nama-lengkap">-</h3>
+    </div>
+
+    <script src="Mahasiswa1KS3.js"></script>
+    <script src="Mahasiswa1KS4.js"></script>
+    <script src="AcakAbsen.js"></script>
+</body>
+
+</html>
