@@ -16,14 +16,21 @@
 <body class="p-1">
     <h1 class="display-1 text-center fw-bold">Random Absen</h1>
     <p class="lead text-center">
-        Made with &#9829;  by M. Rifky Naratama Susanto
-      </p>
+        Made with &#9829; by M. Rifky Naratama Susanto
+    </p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 my-4">
+                <select onchange="resetAbsen()" id="kelas" class="form-select w-100"
+                    aria-label="Default select example">
+                    <option selected>Pilih Kelas...</option>
+                    <option value="1">1KS3</option>
+                    <option value="2">1KS4</option>
+                </select>
+            </div>
+        </div>
+    </div>
     <div class="container d-flex flex-column align-items-center my-4">
-        <select onchange="resetAbsen()" id="kelas" class="form-select my-4 w-50" aria-label="Default select example">
-            <option selected>Pilih Kelas...</option>
-            <option value="1">1KS3</option>
-            <option value="2">1KS4</option>
-        </select>
         <button type="button" onclick="acakAbsen()" class="btn btn-primary mx-auto">Acak!</button>
     </div>
     <div class="container">
